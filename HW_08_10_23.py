@@ -1,7 +1,7 @@
 import math
 
-f = ["*3", "+1", "exp", "^3", "log"]
-x = 2
+# f = ["*3", "+1", "exp", "^3", "log"]
+# x = 2
 
 def grad(f, x):
     arg = x
@@ -49,7 +49,8 @@ def grad(f, x):
 
 
 print(grad(f, x))
-print(3*math.exp(3*x+1)*3*(math.exp(3*x+1)) **
-      2*1/(math.exp(3*x+1)**3*math.log(10)))
-assert grad(f, x) == 3*math.exp(3*x+1)*3*(math.exp(3*x+1))**2 * \
-    1/(math.exp(3*x+1)**3*math.log(10))
+
+# print(3*math.exp(3*x+1)*3*(math.exp(3*x+1)) **
+#      2*1/(math.exp(3*x+1)**3*math.log(10)))
+# assert grad(f, x) == 3*math.exp(3*x+1)*3*(math.exp(3*x+1))**2 * \
+#    1/(math.exp(3*x+1)**3*math.log(10))
