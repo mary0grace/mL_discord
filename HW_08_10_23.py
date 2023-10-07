@@ -47,6 +47,9 @@ def grad(f, x):
             continue
     return answ
 
+
 print(grad(f, x))
-print(3*math.exp(3*x+1)*3*(math.exp(3*x+1))**2*1/(math.exp(3*x+1)**3*math.log(10)))
-assert grad(f, x) == 3*math.exp(3*x+1)*3*(math.exp(3*x+1))**2*1/(math.exp(3*x+1)**3*math.log(10))
+print(3*math.exp(3*x+1)*3*(math.exp(3*x+1)) **
+      2*1/(math.exp(3*x+1)**3*math.log(10)))
+assert grad(f, x) == 3*math.exp(3*x+1)*3*(math.exp(3*x+1))**2 * \
+    1/(math.exp(3*x+1)**3*math.log(10))
